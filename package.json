@@ -1,0 +1,27 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon express --quiet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdwinPinto29/Express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdwinPinto29/Express/issues"
+  },
+  "homepage": "https://github.com/EdwinPinto29/Express#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
