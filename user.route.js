@@ -1,10 +1,19 @@
-import express from 'express';
+import express from "express"
 
-const userRoute = express.Router();
+const userRoute = express.Router()
 
-userRoute.get('/', (req, res) => {
-    res.send(JSON.stringify([{id: 1, name:pepe},{id:2, name:juan}]));
-});
+const data= [
+        {id:1,name:"pepe",},
+        {id:2,name:"papo",}
+    ]
 
 
-export default userRoute;
+userRoute.get("/",(req, res)=>{
+    res.send(JSON.stringify(data))
+})
+
+userRoute.get("/:id",(req, res)=>{
+    res.send(JSON.stringify(data.filter(dat => dat.id == req.params.id)[0]))
+})
+
+export default userRoute
